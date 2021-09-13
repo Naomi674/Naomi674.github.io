@@ -12,6 +12,7 @@ nav {
 nav p {
     color: white;
     font-size: 28px;
+    font-family: arial;
     line-height: 80px;
     float: left;
     padding: 0px 20px;
@@ -25,16 +26,19 @@ nav ul li {
     float: left;
     list-style: none;
     position: relative;
+    font-family: arial;
 }
 nav ul li a {
     display: block;
     color: white;
     font-size: 14px;
+    font-family: arial;
     padding: 22px 14px;
     text-decoration: none;
 }
 nav ul li a:hover {
     background-color: #F2CEE2;
+    border-radius: 4px
 }
 nav ul li ul {
     display: none;
@@ -58,6 +62,8 @@ nav ul li ul li a:hover {
 }
 .active {
     background-color: #F2CEE2;
+    border-radius: 4px;
+    padding: 15px 15px;
 }
 
 
@@ -88,14 +94,16 @@ nav ul li ul li a:hover {
     grid-column-end: 3;
 }
 .content-large h1 {
-    background-color: #73485C;
+    background-color: #7A8C37;
     color:#F2F2F0;
     border-radius: 4px;
 }
 .content-large p {
-    background-color: #BF8EA9;
-    color: #F2F2F0;
+    background-color: #F2CEE2;
+    color: #73485C;
     border-radius: 4px;
+    border-style: dashed;
+    border-color: #7A8C37;
     text-align: center;
     font-size: 25px;
     line-height: 36px;
@@ -118,4 +126,12 @@ nav ul li ul li a:hover {
 .browser > h2, p {
     margin: 4px;
     font-size: 90%
+}
+img {
+    border-radius: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
 }
