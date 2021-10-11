@@ -6,15 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Dashboard</title>
 <link rel="stylesheet" href="style.css">
-<style>
-    table, td, th {
-        border: 1px solid black;
-    }
-    progress {
-        width: 350px;
-        height: 40px;
-    }
-</style>
     </header>
 <body>
     <nav>
@@ -39,7 +30,7 @@
     </nav>
     <div class="container">
         <div class="header">Header</div>
-        <div class="content-large">
+        <div class="container-browser">
             <table>
                 <thread>
                 <tr>
@@ -97,7 +88,7 @@
                 </tr>
                 <tr>
 
-                    <td>assessment</td>
+                    <td>Assessment</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -136,12 +127,13 @@
                 </tr>
                 </tbody>
             </table>
-        </div>
-        <div class="content-small">
             <label id="bar" for="credits">Number of Credits Obtained:</label>
-            <progress id="credits" value="10" max="60"></progress>
+            <progress id="credits" value="0" max="60"></progress>
             <label id="bar" for="credits">NBSA:</label>
             <progress id="credits" value="45" max="60"></progress>
+        </div>
+        <div class="content-small">
+           
         </div>
         <div class="content-small"></div>
         <div class="footer">
