@@ -1,7 +1,29 @@
 body {
     background-color: #F2F2F0;
     margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+h1 {
+    font-size: 28px;
+}
+.link {
+    color:#73485C;
+}
+img {
+    border-radius: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.list {
+    background-color: #BF8EA9;
+    border-radius: 12px;
+    border-style: dashed;
+    border-color: #7A8C37;
+    color: #F2F2F0;
+}
+/* navigation menu */
 nav {
     background-color: #73485C;
     position: fixed;
@@ -12,14 +34,13 @@ nav {
 nav p {
     color: white;
     font-size: 40px;
+    font-family: cursive;
     line-height: 80px;
     float: left;
     padding: 0px 20px;
-
 }
 nav ul {
     float: right;
-
 }
 nav ul li {
     float: left;
@@ -65,8 +86,7 @@ nav ul li ul li a:hover {
     padding: 15px 15px;
     margin-right: 8px;
 }
-
-
+/* Layout */
 .container {
     width: 100vw;
     height: 100vh;
@@ -76,7 +96,6 @@ nav ul li ul li a:hover {
     gap: 10px;
     padding: 10px;
     box-sizing: border-box;
-
 }
 .container div {
     padding: 10px;
@@ -85,7 +104,6 @@ nav ul li ul li a:hover {
 .header {
     grid-column-start: 1;
     grid-column-end: 4;
-
 }
 .content-large {
     grid-row-start: 2;
@@ -96,21 +114,23 @@ nav ul li ul li a:hover {
 .content-large h1 {
     background-color: #7A8C37;
     color:#F2F2F0;
-    border-radius: 4px;
+    border-radius: 12px;
 }
 .content-large p {
     background-color: #F2CEE2;
     color: #73485C;
-    border-radius: 4px;
+    border-radius: 12px;
     border-style: dashed;
     border-color: #7A8C37;
     text-align: center;
     font-size: 25px;
     line-height: 36px;
+    padding: 10px;
 }
 .footer {
     grid-column: 1 / span 3;
 }
+/* FAQ and Blog specific */
 .all-browsers {
     margin: 0;
     padding: 5px;
@@ -127,11 +147,58 @@ nav ul li ul li a:hover {
     margin: 4px;
     font-size: 90%
 }
-img {
-    border-radius: 10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-
+.browser h2 {
+    font-size: 24px;
+}
+.browser p {
+    font-size: 20px;
+}
+.container-browser {
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.container-browser p {
+    background-color: #F2CEE2;
+    color: #73485C;
+    border-radius: 4px;
+    border-style: dashed;
+    border-color: #7A8C37;
+    text-align: center;
+    font-size: 25px;
+    line-height: 36px;
+}
+.container-browser h1 {
+    background-color: #7A8C37;
+    color:#F2F2F0;
+    border-radius: 4px;
+}
+.all-browsers h1 {
+    text-align: center;
+}
+/* Dashboard Table */
+table, td, th {
+    border: 2px solid #73485C;
+    border-collapse: collapse;
+    background-color: #F2CEE2;
+    color: #73485C;
+    font-size: 20px;
+}
+table, tr, th {
+    background-color: #7A8C37;
+    color: white;
+    font-size: 25px;
+}
+table {
+    margin: auto;
+    width: 60%;
+    height: 110%;
+}
+progress {
+    width: 400px;
+    height: 40px;
+}
+#bar {
+    font-size: 18px;
 }
